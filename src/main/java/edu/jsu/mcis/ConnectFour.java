@@ -34,28 +34,26 @@ public class ConnectFour {
     }
     
     public void dropToken(int column) throws ColumnFullException{
-		int mark = 0;
         for(int i = 0; i < ROWS; i++ ){
 			if(board[ROWS - i - 1][column] == Location.EMPTY && redTurn == true)
 			{
-				mark ++;
-				board[i][column] = Location.RED;
+				board[ROWS - i - 1][column] = Location.RED;
 				TOP = ROWS - 1 - i;
 				redTurn = false;
 				break;
 			}
 			else if (board[ROWS - i - 1][column] == Location.EMPTY && redTurn == false)
 			{
-				mark ++;
-				board[i][column] = Location.BLACK;
+				board[ROWS - i - 1][column] = Location.BLACK;
 				TOP = ROWS - 1 - i;
 				redTurn = true;
 				break;
 			}
-			else if (i >= ROWS)
+			else if (board[0][column] != Location.EMPTY)
 			{
-				throw new ColumnFullException("This " + column + "is full!");
+				throw new ColumnFullException("Column Is Full!");
 			}
 		}
+		
     }
 } 

@@ -27,10 +27,9 @@ public class ConnectFourTest{
     public void testDroppingOnAFullColumnShouldThrowException() throws Exception {
 		ConnectFour c = new ConnectFour();
 		int col = 3;
-        for(int i = 0; i < c.ROWS; i++ ){
+        for(int i = 0; i < 7; i++ ){
 			c.dropToken(col);
 		}
-		c.dropToken;
     }
     
 }

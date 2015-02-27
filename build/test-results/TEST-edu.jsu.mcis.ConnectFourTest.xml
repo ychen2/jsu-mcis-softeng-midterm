@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.jsu.mcis.ConnectFourTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-02-27T17:34:27" hostname="cylaiye" time="0.005">
+<testsuite name="edu.jsu.mcis.ConnectFourTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2015-02-27T18:38:22" hostname="cylaiye" time="0.004">
   <properties/>
-  <testcase name="testNewGameBoardShouldBeEmpty" classname="edu.jsu.mcis.ConnectFourTest" time="0.005"/>
+  <testcase name="testNewGameBoardShouldBeEmpty" classname="edu.jsu.mcis.ConnectFourTest" time="0.003"/>
+  <testcase name="testDroppingOnAFullColumnShouldThrowException" classname="edu.jsu.mcis.ConnectFourTest" time="0.001"/>
   <testcase name="testDropRedTokenInThirdColumnTheBlackTokenOnTopOfIt" classname="edu.jsu.mcis.ConnectFourTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
