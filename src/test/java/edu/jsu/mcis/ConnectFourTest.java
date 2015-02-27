@@ -2,7 +2,6 @@ package edu.jsu.mcis;
 
 import org.junit.*;
 import static org.junit.Assert.*;
-
 public class ConnectFourTest{
 	@Test
     public void testNewGameBoardShouldBeEmpty() {
@@ -25,8 +24,13 @@ public class ConnectFourTest{
     }
     
     @Test(expected=ColumnFullException.class)
-    public void testDroppingOnAFullColumnShouldThrowException() {
-        
+    public void testDroppingOnAFullColumnShouldThrowException() throws Exception {
+		ConnectFour c = new ConnectFour();
+		int col = 3;
+        for(int i = 0; i < c.ROWS; i++ ){
+			c.dropToken(col);
+		}
+		c.dropToken;
     }
     
 }
